@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">BASITH<span>smile</span></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2 class="animated-heading">Hi, I'm Basith</h2>
+    <p>Building interactive assistants, GUIs, and creative web experiences.</p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="animated-heading">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Web Development</div>
+      <div class="skill-card">UI/UX Design</div>
+      <div class="skill-card">AI/ML Basics</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="animated-heading">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Jarvis Assistant</h3>
+        <p>Voice + text interactive assistant with glowing visualizer.</p>
+      </div>
+      <div class="project-card">
+        <h3>Quiz Game</h3>
+        <p>Python quiz game with speech input and HUD-style console.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="animated-heading">Contact Me</h2>
+    <form onsubmit="return submitForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Mohamed's Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
